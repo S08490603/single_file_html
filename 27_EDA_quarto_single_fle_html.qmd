@@ -1,0 +1,62 @@
+---
+title: 'Exploratory Data Analysis'
+author: 'Hansen'
+format: 
+    html:
+        embed-resources: true
+---
+
+## Load package
+
+```{python}
+import pandas as pd
+```
+
+## Load dataset from smoker.csv file
+
+```{python}
+df = pd.read_csv('smoker.csv')
+```
+
+## Check dimension of dataset
+
+```{python}
+df.shape
+```
+
+## Check dataset info
+
+```{python}
+df.info()
+```
+
+## Check first five rows
+
+```{python}
+df.head()
+```
+
+## Check last five years 
+
+```{python}
+df.tail()
+```
+
+## Calculate sum of treatment column
+
+```{python}
+df.sum()
+```
+
+## Create a descriptive statistic
+
+
+```{python}
+df.describe()
+```
+
+## Count unique values in outcome value
+
+```{python}
+df.value_counts()
+```
